@@ -1,0 +1,104 @@
+name: dugun_defteri
+description: >
+  DüğünDefteri - Doğu ve Güneydoğu Anadolu düğün kültürüne özel,
+  takı ve katılım takip uygulaması.
+  
+  Ana Özellikler:
+  - Takı Muhasebesi (Altın/Döviz/TL)
+  - Akıllı Düğün Takvimi
+  - Geri Dönüş Sistemi
+  - Offline-First支持
+  - Native Reklam Modülü
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # =====================================================
+  # STATE MANAGEMENT
+  # =====================================================
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # =====================================================
+  # DATABASE & STORAGE
+  # =====================================================
+  drift: ^2.14.1
+  sqlite3_flutter_libs: ^0.5.18
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  hive_flutter: ^1.1.0
+
+  # =====================================================
+  # SUPABASE (Backend)
+  # =====================================================
+  supabase_flutter: ^1.10.3
+
+  # =====================================================
+  # NETWORK & CONNECTIVITY
+  # =====================================================
+  connectivity_plus: ^5.0.2
+  http: ^1.1.0
+
+  # =====================================================
+  # DATA SERIALIZATION
+  # =====================================================
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+  # =====================================================
+  # UI & UTILS
+  # =====================================================
+  intl: ^0.18.1
+  flutter_local_notifications: ^15.1.1
+  uuid: ^4.2.2
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.1
+  image_picker: ^1.0.7
+  url_launcher: ^6.2.4
+  share_plus: ^7.2.1
+  
+  # Material Icons
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+
+  # =====================================================
+  # CODE GENERATION
+  # =====================================================
+  build_runner: ^2.4.8
+  drift_dev: ^2.14.1
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.9
+
+flutter:
+  uses-material-design: true
+
+  # =====================================================
+  # ASSETS
+  # =====================================================
+  assets:
+    - assets/images/
+    # - assets/icons/
+
+  # =====================================================
+  # FONTS (Opsiyonel - özel yazıtipi kullanılacaksa)
+  # =====================================================
+  # fonts:
+  #   - family: Nunito
+  #     fonts:
+  #       - asset: assets/fonts/Nunito-Regular.ttf
+  #       - asset: assets/fonts/Nunito-Bold.ttf
+  #         weight: 700
